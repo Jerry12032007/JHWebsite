@@ -1,122 +1,91 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Jerry Huynh - Biology and Computer Science student, researcher, and developer." />
+    <title>Jerry Huynh | Research & Development</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container" aria-label="Primary navigation">
+        <a class="nav__logo" href="#home">JH<span>.</span></a>
+        <button class="nav__toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li><a class="nav__link active-link" href="#home">Home</a></li>
+            <li><a class="nav__link" href="#about">About</a></li>
+            <li><a class="nav__link" href="#experience">Experience</a></li>
+            <li><a class="nav__link" href="#skills">Skills</a></li>
+            <li><a class="nav__link nav__link--button" href="#contact">Let's talk</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-        <!--==================== UNICONS ====================-->
-        
-        
-        <!--==================== SWIPER CSS ====================-->
-        
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="css/styles.css">
-        <title>Responsive Portfolio Website</title>
-    </head>
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            
-        </header>
+    <main>
+      <section class="home section" id="home">
+        <div class="home__shape"></div>
+        <div class="home__container container grid">
+          <div class="home__content">
+            <p class="eyebrow"><span></span> Biology + Computer Science</p>
+            <h1>Researching life.<br /><em>Building</em> what’s next.</h1>
+            <p class="home__description">I’m Jerry Huynh, a Carleton College student exploring molecular biology, computational research, and practical tools that make science move faster.</p>
+            <div class="home__buttons">
+              <a class="button" href="#experience">Explore my work <span aria-hidden="true">↘</span></a>
+              <a class="text-link" href="mailto:huynhj@carleton.edu">Get in touch <span aria-hidden="true">→</span></a>
+            </div>
+          </div>
+          <aside class="home__card" aria-label="Jerry's academic profile">
+            <div class="home__card-top"><span>JH</span><span class="status"><i></i> Available for research</span></div>
+            <div class="home__initials">JH</div>
+            <div class="home__card-bottom">
+              <strong>Jerry Huynh</strong>
+              <p>Northfield, Minnesota</p>
+              <div class="home__tags"><span>Molecular Biology</span><span>Computer Vision</span></div>
+            </div>
+          </aside>
+        </div>
+        <div class="home__footer container"><span>Scroll to discover</span><span class="line"></span><span>01 / 05</span></div>
+      </section>
 
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                <h1>Hello, I'm Jerry</h1>
-                <p>Student • Researcher • Developer</p>
-            </section>
+      <section class="about section" id="about">
+        <div class="container about__container grid">
+          <div><p class="section__kicker">01 — About</p><h2 class="section__title">Curiosity is my<br />starting point.</h2></div>
+          <div class="about__copy"><p>I’m pursuing a BA in Biology and Computer Science at Carleton College. My work lives at the intersection of careful experimentation and useful technology—from optimizing fatty-acid analysis to building machine-vision workflows.</p><p>I enjoy asking precise questions, testing ideas against evidence, and sharing what I learn with others.</p><a class="text-link" href="#contact">More about me <span aria-hidden="true">→</span></a></div>
+        </div>
+        <div class="stats container">
+          <div><strong>3.70</strong><span>GPA at Carleton</span></div>
+          <div><strong>50%</strong><span>Faster screening workflow</span></div>
+          <div><strong>3×</strong><span>Increase in G0 rate</span></div>
+          <div><strong>90%</strong><span>Mold reduction in rearing</span></div>
+        </div>
+      </section>
 
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                <h2>About Me</h2>
-                <p>
-                    I'm interested in biology, computer science, research,
-                    and building software.
-                </p>
-                
-            </section>
+      <section class="experience section" id="experience">
+        <div class="container"><p class="section__kicker">02 — Experience</p><div class="section__heading"><h2 class="section__title">Where I’ve<br />made an impact.</h2><p>Hands-on research, technical operations, and science communication.</p></div>
+          <div class="experience__list">
+            <article class="experience__item"><div class="experience__meta"><span>2026</span><span>University of Minnesota</span></div><div><h3>Research Assistant</h3><p>Designed plasmid constructs for omega-3 production in black soldier flies, improved rearing conditions, and optimized injection and GC-MS workflows.</p></div><strong class="experience__result">5–7%<small>more linoleic acid</small></strong></article>
+            <article class="experience__item"><div class="experience__meta"><span>2025–26</span><span>Carleton College</span></div><div><h3>Biology Technical Assistant</h3><p>Maintained research animals and stable zebrafish lines while recording breeding, phenotype, and health data with rigorous contamination controls.</p></div><strong class="experience__result">8+<small>phenotypes supported</small></strong></article>
+            <article class="experience__item"><div class="experience__meta"><span>2023–25</span><span>Westtown School</span></div><div><h3>Teaching Assistant</h3><p>Conducted independent research in gel microfluidics, phage encapsulation, and Drosophila genetics; taught robotics and Java programming.</p></div><strong class="experience__result">3<small>research projects</small></strong></article>
+            <article class="experience__item"><div class="experience__meta"><span>2024</span><span>New Haven Hospital</span></div><div><h3>Sterilisation Technician</h3><p>Managed sterile equipment and developed a Python computer-vision tool to help identify medical instruments for more efficient sorting.</p></div><strong class="experience__result">Python<small>computer vision</small></strong></article>
+          </div>
+        </div>
+      </section>
 
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
-                <h2>My skills are </h2>
-                <p>
-                Research 
-                </p>
+      <section class="skills section" id="skills"><div class="container skills__container grid"><div><p class="section__kicker">03 — Toolkit</p><h2 class="section__title">Science meets<br />software.</h2></div><div class="skills__groups"><div><h3>Laboratory</h3><p>PCR · Microinjection · Plasmid Design · GC-MS · Direct Methylation · Experimental Design · Sterile Technique</p></div><div><h3>Technology</h3><p>Python · Computer Vision · Web Development · AI Integration · Java · Adobe Premiere</p></div><div><h3>Collaboration</h3><p>Scientific Communication · Training & Mentoring · Project Coordination · Problem-Solving</p></div></div></div></section>
 
-            </section>
+      <section class="education section"><div class="container education__container"><p class="section__kicker">04 — Education & Recognition</p><div class="education__grid"><article><p class="label">Education</p><h2>Carleton College</h2><p>BA, Biology & Computer Science<br />Sep 2025 – Jun 2029</p><span>Kolenkow-Reitz Fellowship Recipient</span></article><article><p class="label">Highlights</p><ul><li><b>2nd place</b> — Carleton CS Hackathon</li><li><b>Finalist</b> — Carleton Impact Challenge</li><li><b>Participant</b> — USA Biology Olympiad</li></ul></article></div></div></section>
 
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section">
-                <h2>My skills are </h2>
-                <p>
-                Research 
-                </p>
-
-            </section>
-
-            <!--==================== SERVICES ====================-->
-            <section class="services section" id="services">
-                <h2>My skills are </h2>
-                <p>
-                Research 
-                </p>
-                
-            </section>
-
-            <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
-                <h2>My skills are </h2>
-                <p>
-                Research 
-                </p>
-                
-            </section>
-
-            <!--==================== PROJECT IN MIND ====================-->
-            <section class="project section">
-                <h2>My skills are </h2>
-                <p>
-                Research 
-                </p>
-
-            </section>
-
-            <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section">
-                <h2>My skills are </h2>
-                <p>
-                Research 
-                </p>
-                
-            </section>
-
-            <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact">
-                <h2>My skills are </h2>
-                <p>
-                Research 
-                </p>
-
-            </section>
-        </main>
-
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-            <h2>My skills are </h2>
-                <p>
-                Research 
-                </p>
-         
-        </footer>
-        
-        <!--==================== SCROLL TOP ====================-->
-        
-
-        <!--==================== SWIPER JS ====================-->
-        <script src="js/main.js"></script>
-
-        <!--==================== MAIN JS ====================-->
-        <script src="js/main.js"></script>
-    </body>
+      <section class="contact section" id="contact"><div class="container contact__container"><p class="section__kicker">05 — Contact</p><h2>Let’s make something<br /><em>meaningful.</em></h2><a class="contact__email" href="mailto:huynhj@carleton.edu">huynhj@carleton.edu <span>↗</span></a><p>Northfield, MN · <a href="tel:+14848803718">484-880-3718</a></p></div></section>
+    </main>
+    <footer class="footer container"><a class="nav__logo" href="#home">JH<span>.</span></a><p>© <span id="year"></span> Jerry Huynh</p><a href="#home">Back to top ↑</a></footer>
+    <script src="js/main.js"></script>
+  </body>
 </html>
