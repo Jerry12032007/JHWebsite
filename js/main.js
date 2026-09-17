@@ -1,39 +1,12 @@
-/*==================== MENU SHOW Y HIDDEN ====================*/
+const header = document.querySelector('.header');
+const toggle = document.querySelector('.nav__toggle');
+const menu = document.querySelector('.nav__menu');
+const links = document.querySelectorAll('.nav__link');
 
-
-/*===== MENU SHOW =====*/
-/* Validate if constant exists */
-
-
-/*===== MENU HIDDEN =====*/
-/* Validate if constant exists */
-
-
-/*==================== REMOVE MENU MOBILE ====================*/
-
-
-/*==================== ACCORDION SKILLS ====================*/
-
-
-/*==================== QUALIFICATION TABS ====================*/
-
-
-/*==================== SERVICES MODAL ====================*/
-
-
-/*==================== PORTFOLIO SWIPER  ====================*/
-
-
-/*==================== TESTIMONIAL ====================*/
-
-
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-
-
-/*==================== CHANGE BACKGROUND HEADER ====================*/ 
-
-
-/*==================== SHOW SCROLL UP ====================*/ 
-
-
-/*==================== DARK LIGHT THEME ====================*/ 
+window.addEventListener('scroll', () => header.classList.toggle('scrolled', window.scrollY > 20));
+toggle.addEventListener('click', () => {
+  const open = menu.classList.toggle('show');
+  toggle.setAttribute('aria-expanded', open);
+});
+links.forEach(link => link.addEventListener('click', () => menu.classList.remove('show')));
+document.getElementById('year').textContent = new Date().getFullYear();

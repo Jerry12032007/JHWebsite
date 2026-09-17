@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Kaggle Titanic Dataset Analysis | Jerry Huynh</title>
+  <meta
+    name="description"
+    content="Kaggle Titanic Dataset Analysis by Jerry Huynh."
+  >
+  <meta name="author" content="Jerry Huynh">
+
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+</head>
+
+
+<body>
+
+  <!-- ================================
+       NAVIGATION
+  ================================= -->
+
+  <header class="header">
+
+    <nav class="nav container">
+
+      <a href="../index.html" class="nav__logo">
+        JH<span>.</span>
+      </a>
+
+      <div class="nav__links">
+
+        <a href="../index.html" class="nav__link">
+          Home
+        </a>
+
+        <a href="../index.html#projects" class="nav__link active">
+          Projects
+        </a>
+
+        <a href="../index.html#experience" class="nav__link">
+          Experience
+        </a>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+  <!-- ================================
+       PROJECT HEADER
+  ================================= -->
+
+  <main>
+
+    <section class="project-page">
+
+      <div class="container">
+
+        <a href="../index.html#projects" class="back-link">
+          ← Back to Projects
+        </a>
+
+
+        <div class="project-page__header">
+
+          <p class="section__label">
+            PROJECT 01 — DATA SCIENCE
+          </p>
+
+          <h1 class="project-page__title">
+            Kaggle Titanic
+            <span>Dataset Analysis</span>
+          </h1>
+
+          <p class="project-page__intro">
+            An exploratory data analysis and machine learning project
+            using the Titanic passenger dataset to investigate the factors
+            associated with passenger survival.
+          </p>
+
+
+          <div class="project-page__tags">
+
+            <span>Python</span>
+            <span>Pandas</span>
+            <span>Machine Learning</span>
+            <span>Data Analysis</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================================
+         PROJECT OVERVIEW
+    ================================= -->
+
+    <section class="project-section">
+
+      <div class="container project-grid">
+
+        <div>
+
+          <p class="section__label">
+            01 — OVERVIEW
+          </p>
+
+          <h2 class="project-section__title">
+            Understanding survival
+          </h2>
+
+        </div>
+
+
+        <div class="project-section__content">
+
+          <p>
+            The Titanic dataset contains information about passengers
+            aboard the RMS Titanic, including characteristics such as
+            age, sex, passenger class, fare, and whether the passenger
+            survived.
+          </p>
+
+          <p>
+            The goal of this project is to explore the dataset,
+            identify patterns associated with survival, and build
+            a model capable of predicting whether a passenger survived.
+          </p>
+
+          <p>
+            I am using this project to develop my skills in data
+            cleaning, exploratory data analysis, visualization,
+            feature engineering, and machine learning.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================================
+         RESEARCH QUESTION
+    ================================= -->
+
+    <section class="project-section project-section--light">
+
+      <div class="container project-grid">
+
+        <div>
+
+          <p class="section__label">
+            02 — QUESTION
+          </p>
+
+          <h2 class="project-section__title">
+            What factors influenced survival?
+          </h2>
+
+        </div>
+
+
+        <div class="project-section__content">
+
+          <p>
+            The main question I am investigating is:
+          </p>
+
+          <blockquote>
+            Which passenger characteristics are most strongly
+            associated with survival on the Titanic?
+          </blockquote>
+
+          <p>
+            I am particularly interested in examining relationships
+            involving passenger class, age, sex, fare, and family
+            information.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================================
+         DATA ANALYSIS
+    ================================= -->
+
+    <section class="project-section">
+
+      <div class="container">
+
+        <p class="section__label">
+          03 — DATA ANALYSIS
+        </p>
+
+        <h2 class="project-section__title">
+          Exploring the dataset
+        </h2>
+
+
+        <div class="analysis-grid">
+
+          <div class="analysis-card">
+
+            <span class="analysis-card__number">
+              01
+            </span>
+
+            <h3>
+              Data Cleaning
+            </h3>
+
+            <p>
+              Inspecting missing values, removing or transforming
+              unnecessary variables, and preparing the dataset
+              for analysis.
+            </p>
+
+          </div>
+
+
+          <div class="analysis-card">
+
+            <span class="analysis-card__number">
+              02
+            </span>
+
+            <h3>
+              Exploratory Analysis
+            </h3>
+
+            <p>
+              Comparing survival rates across passenger
+              characteristics and identifying relationships
+              within the dataset.
+            </p>
+
+          </div>
+
+
+          <div class="analysis-card">
+
+            <span class="analysis-card__number">
+              03
+            </span>
+
+            <h3>
+              Visualization
+            </h3>
+
+            <p>
+              Creating visualizations to communicate patterns
+              and differences between passengers who survived
+              and those who did not.
+            </p>
+
+          </div>
+
+
+          <div class="analysis-card">
+
+            <span class="analysis-card__number">
+              04
+            </span>
+
+            <h3>
+              Feature Engineering
+            </h3>
+
+            <p>
+              Transforming existing variables and creating useful
+              features that can be used by machine learning models.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================================
+         VISUALIZATIONS
+    ================================= -->
+
+    <section class="project-section project-section--light">
+
+      <div class="container">
+
+        <p class="section__label">
+          04 — VISUALIZATIONS
+        </p>
+
+        <h2 class="project-section__title">
+          What does the data show?
+        </h2>
+
+
+        <div class="visualization-grid">
+
+          <!-- Replace these with your actual graphs -->
+
+          <div class="visualization-card">
+
+            <div class="visualization-placeholder">
+              <span>GRAPH</span>
+            </div>
+
+            <h3>
+              Survival by Passenger Class
+            </h3>
+
+            <p>
+              Add a short explanation of what this visualization
+              demonstrates.
+            </p>
+
+          </div>
+
+
+          <div class="visualization-card">
+
+            <div class="visualization-placeholder">
+              <span>GRAPH</span>
+            </div>
+
+            <h3>
+              Survival by Sex
+            </h3>
+
+            <p>
+              Add a short explanation of what this visualization
+              demonstrates.
+            </p>
+
+          </div>
+
+
+          <div class="visualization-card">
+
+            <div class="visualization-placeholder">
+              <span>GRAPH</span>
+            </div>
+
+            <h3>
+              Survival by Age
+            </h3>
+
+            <p>
+              Add a short explanation of what this visualization
+              demonstrates.
+            </p>
+
+          </div>
+
+
+          <div class="visualization-card">
+
+            <div class="visualization-placeholder">
+              <span>GRAPH</span>
+            </div>
+
+            <h3>
+              Feature Relationships
+            </h3>
+
+            <p>
+              Add a short explanation of what this visualization
+              demonstrates.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================================
+         MACHINE LEARNING
+    ================================= -->
+
+    <section class="project-section">
+
+      <div class="container project-grid">
+
+        <div>
+
+          <p class="section__label">
+            05 — MACHINE LEARNING
+          </p>
+
+          <h2 class="project-section__title">
+            Predicting survival
+          </h2>
+
+        </div>
+
+
+        <div class="project-section__content">
+
+          <p>
+            After exploring the dataset, I use the passenger
+            characteristics as features for a machine learning
+            model.
+          </p>
+
+          <p>
+            The model is trained using the available training data
+            and evaluated based on its ability to predict passenger
+            survival.
+          </p>
+
+
+          <div class="model-info">
+
+            <div>
+              <span>Model</span>
+              <strong>Model name</strong>
+            </div>
+
+            <div>
+              <span>Features</span>
+              <strong>Passenger data</strong>
+            </div>
+
+            <div>
+              <span>Evaluation</span>
+              <strong>Accuracy / F1 / etc.</strong>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================================
+         RESULTS
+    ================================= -->
+
+    <section class="project-section project-section--blue">
+
+      <div class="container">
+
+        <p class="section__label">
+          06 — RESULTS
+        </p>
+
+        <h2 class="project-section__title">
+          Results & Findings
+        </h2>
+
+
+        <div class="results">
+
+          <div class="result">
+
+            <span class="result__number">
+              --
+            </span>
+
+            <p>
+              Model accuracy
+            </p>
+
+          </div>
+
+
+          <div class="result">
+
+            <span class="result__number">
+              --
+            </span>
+
+            <p>
+              Kaggle score
+            </p>
+
+          </div>
+
+
+          <div class="result">
+
+            <span class="result__number">
+              --
+            </span>
+
+            <p>
+              Important features
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="results__text">
+
+          <p>
+            Add your main findings here after completing the analysis.
+            This section should explain what you learned from the
+            dataset and how the results relate to your original
+            question.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================================
+         WHAT I LEARNED
+    ================================= -->
+
+    <section class="project-section">
+
+      <div class="container project-grid">
+
+        <div>
+
+          <p class="section__label">
+            07 — REFLECTION
+          </p>
+
+          <h2 class="project-section__title">
+            What I learned
+          </h2>
+
+        </div>
+
+
+        <div class="project-section__content">
+
+          <p>
+            This project helped me develop practical experience
+            working with a real-world dataset and applying
+            computational methods to a biological and historical
+            question.
+          </p>
+
+          <p>
+            Through the project, I practiced working with Python,
+            data manipulation, visualization, and machine learning.
+          </p>
+
+          <p>
+            I also learned how important data preparation and
+            interpretation are when using computational models
+            to answer questions.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ================================
+         LINKS
+    ================================= -->
+
+    <section class="project-links">
+
+      <div class="container">
+
+        <p class="section__label">
+          PROJECT LINKS
+        </p>
+
+        <div class="project-links__buttons">
+
+          <a
+            href="#"
+            class="button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View on GitHub →
+          </a>
+
+          <a
+            href="#"
+            class="text-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Kaggle Notebook
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- ================================
+       FOOTER
+  ================================= -->
+
+  <footer class="footer">
+
+    <div class="container">
+
+      <p>
+        © 2026 Jerry Huynh
+      </p>
+
+      <a href="../index.html">
+        Back to home ↑
+      </a>
+
+    </div>
+
+  </footer>
+
+
+</body>
+
+</html>
