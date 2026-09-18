@@ -1,71 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Kaggle Titanic Dataset Analysis | Jerry Huynh</title>
   <meta
     name="description"
     content="Kaggle Titanic Dataset Analysis by Jerry Huynh."
   >
   <meta name="author" content="Jerry Huynh">
-
-  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/TitanicStyle.css">
   <link rel="icon" href="../favicon.ico" type="image/x-icon">
 </head>
 
-
 <body>
 
-  <!-- ================================
-       NAVIGATION
-  ================================= -->
+  <!-- =================================
+       HEADER
+  ================================== -->
 
   <header class="header">
-
     <nav class="nav container">
-
       <a href="../index.html" class="nav__logo">
         JH<span>.</span>
       </a>
 
       <div class="nav__links">
-
-        <a href="../index.html" class="nav__link">
-          Home
-        </a>
-
-        <a href="../index.html#projects" class="nav__link active">
-          Projects
-        </a>
-
-        <a href="../index.html#experience" class="nav__link">
-          Experience
-        </a>
-
+        <a href="../index.html" class="nav__link">Home</a>
+        <a href="../index.html#projects" class="nav__link active">Projects</a>
+        <a href="../index.html#experience" class="nav__link">Experience</a>
       </div>
-
     </nav>
-
   </header>
 
 
-  <!-- ================================
-       PROJECT HEADER
-  ================================= -->
-
   <main>
 
-    <section class="project-page">
+    <!-- =================================
+         PROJECT HERO
+    ================================== -->
 
+    <section class="project-page">
       <div class="container">
 
         <a href="../index.html#projects" class="back-link">
           ← Back to Projects
         </a>
-
 
         <div class="project-page__header">
 
@@ -73,10 +53,24 @@
             PROJECT 01 — DATA SCIENCE
           </p>
 
-          <h1 class="project-page__title">
-            Kaggle Titanic
-            <span>Dataset Analysis</span>
-          </h1>
+          <div class="project-page__title-row">
+
+            <div class="project-page__title-wrap">
+              <h1 class="project-page__title">
+                Kaggle Titanic
+                <span>Dataset Analysis</span>
+              </h1>
+            </div>
+
+            <div class="project-page__image-wrap">
+              <img
+                class="Titanic_Sinking_Image"
+                src="titanic_img/images.jpg"
+                alt="Titanic sinking"
+              >
+            </div>
+
+          </div>
 
           <p class="project-page__intro">
             An exploratory data analysis and machine learning project
@@ -84,46 +78,34 @@
             associated with passenger survival.
           </p>
 
-
           <div class="project-page__tags">
-
-            <span>Python</span>
-            <span>Pandas</span>
+            <span>Python Pandas</span>
+            <span>Scikit-Learn</span>
             <span>Machine Learning</span>
             <span>Data Analysis</span>
-
           </div>
 
         </div>
-
       </div>
-
     </section>
 
 
-    <!-- ================================
-         PROJECT OVERVIEW
-    ================================= -->
+    <!-- =================================
+         OVERVIEW
+    ================================== -->
 
     <section class="project-section">
-
       <div class="container project-grid">
 
         <div>
-
-          <p class="section__label">
-            01 — OVERVIEW
-          </p>
+          <p class="section__label">01 — OVERVIEW</p>
 
           <h2 class="project-section__title">
             Understanding survival
           </h2>
-
         </div>
 
-
         <div class="project-section__content">
-
           <p>
             The Titanic dataset contains information about passengers
             aboard the RMS Titanic, including characteristics such as
@@ -134,7 +116,8 @@
           <p>
             The goal of this project is to explore the dataset,
             identify patterns associated with survival, and build
-            a model capable of predicting whether a passenger survived.
+            a model capable of predicting whether a passenger survived
+            in the test data case.
           </p>
 
           <p>
@@ -142,34 +125,26 @@
             cleaning, exploratory data analysis, visualization,
             feature engineering, and machine learning.
           </p>
-
         </div>
 
       </div>
-
     </section>
 
 
-    <!-- ================================
+    <!-- =================================
          RESEARCH QUESTION
-    ================================= -->
+    ================================== -->
 
     <section class="project-section project-section--light">
-
       <div class="container project-grid">
 
         <div>
-
-          <p class="section__label">
-            02 — QUESTION
-          </p>
+          <p class="section__label">02 — QUESTION</p>
 
           <h2 class="project-section__title">
             What factors influenced survival?
           </h2>
-
         </div>
-
 
         <div class="project-section__content">
 
@@ -191,250 +166,258 @@
         </div>
 
       </div>
-
     </section>
 
 
-    <!-- ================================
+    <!-- =================================
          DATA ANALYSIS
-    ================================= -->
+    ================================== -->
 
     <section class="project-section">
-
       <div class="container">
 
-        <p class="section__label">
-          03 — DATA ANALYSIS
-        </p>
+        <p class="section__label">03 — DATA ANALYSIS</p>
 
         <h2 class="project-section__title">
           Exploring the dataset
         </h2>
 
-
         <div class="analysis-grid">
 
           <div class="analysis-card">
-
-            <span class="analysis-card__number">
-              01
-            </span>
-
-            <h3>
-              Data Cleaning
-            </h3>
-
+            <span class="analysis-card__number">01</span>
+            <h3>Data Cleaning</h3>
             <p>
               Inspecting missing values, removing or transforming
               unnecessary variables, and preparing the dataset
               for analysis.
             </p>
-
           </div>
 
-
           <div class="analysis-card">
-
-            <span class="analysis-card__number">
-              02
-            </span>
-
-            <h3>
-              Exploratory Analysis
-            </h3>
-
+            <span class="analysis-card__number">02</span>
+            <h3>Exploratory Analysis</h3>
             <p>
               Comparing survival rates across passenger
               characteristics and identifying relationships
               within the dataset.
             </p>
-
           </div>
 
-
           <div class="analysis-card">
-
-            <span class="analysis-card__number">
-              03
-            </span>
-
-            <h3>
-              Visualization
-            </h3>
-
+            <span class="analysis-card__number">03</span>
+            <h3>Visualization</h3>
             <p>
               Creating visualizations to communicate patterns
               and differences between passengers who survived
               and those who did not.
             </p>
-
           </div>
 
-
           <div class="analysis-card">
-
-            <span class="analysis-card__number">
-              04
-            </span>
-
-            <h3>
-              Feature Engineering
-            </h3>
-
+            <span class="analysis-card__number">04</span>
+            <h3>Feature Engineering</h3>
             <p>
               Transforming existing variables and creating useful
               features that can be used by machine learning models.
             </p>
-
           </div>
 
         </div>
 
       </div>
-
     </section>
 
 
-    <!-- ================================
-         VISUALIZATIONS
-    ================================= -->
+    <!-- =================================
+         DATA OVERVIEW
+    ================================== -->
 
     <section class="project-section project-section--light">
-
       <div class="container">
 
-        <p class="section__label">
-          04 — VISUALIZATIONS
-        </p>
+        <p class="section__label">03.5 — DATA OVERVIEW</p>
+
+        <h2 class="project-section__title">
+          Overview of the Data
+        </h2>
+
+        <div class="data-overview-grid">
+
+          <article class="data-overview-card">
+            <div class="data-image">
+              <img
+                src="titanic_img/Variable_heatmap.png"
+                alt="Variable heatmap"
+              >
+            </div>
+
+            <div class="data-overview-card__body">
+              <h3>Variable Relationships</h3>
+              <p>
+                Heatmap showing relationships between variables
+                in the Titanic dataset.
+              </p>
+            </div>
+          </article>
+
+          <article class="data-overview-card">
+            <div class="data-image">
+              <img
+                src="titanic_img/PCA_Biplot.png"
+                alt="PCA biplot"
+              >
+            </div>
+
+            <div class="data-overview-card__body">
+              <h3>PCA Biplot</h3>
+              <p>
+                Principal component analysis showing patterns
+                across the dataset.
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =================================
+         VISUALIZATIONS
+    ================================== -->
+
+    <section class="project-section">
+      <div class="container">
+
+        <p class="section__label">04 — VISUALIZATIONS</p>
 
         <h2 class="project-section__title">
           What does the data show?
         </h2>
 
-
         <div class="visualization-grid">
 
-          <!-- Replace these with your actual graphs -->
+          <article class="visualization-card">
 
-          <div class="visualization-card">
-
-            <div class="visualization-placeholder">
-              <span>GRAPH</span>
+            <div class="visualization-image">
+              <img
+                src="titanic_img/Fare_Distribution.png"
+                alt="Fare distribution between survivors and non-survivors"
+              >
             </div>
 
-            <h3>
-              Survival by Passenger Class
-            </h3>
-
-            <p>
-              Add a short explanation of what this visualization
-              demonstrates.
-            </p>
-
-          </div>
-
-
-          <div class="visualization-card">
-
-            <div class="visualization-placeholder">
-              <span>GRAPH</span>
+            <div class="visualization-card__body">
+              <h3>Fare Distribution</h3>
+              <p>
+                Distribution of fare between passengers who survived
+                and passengers who did not survive.
+              </p>
             </div>
 
-            <h3>
-              Survival by Sex
-            </h3>
-
-            <p>
-              Add a short explanation of what this visualization
-              demonstrates.
-            </p>
-
-          </div>
+          </article>
 
 
-          <div class="visualization-card">
+          <article class="visualization-card">
 
-            <div class="visualization-placeholder">
-              <span>GRAPH</span>
+            <div class="visualization-image">
+              <img
+                src="titanic_img/Survivors by Sex.png"
+                alt="Survival by sex"
+              >
             </div>
 
-            <h3>
-              Survival by Age
-            </h3>
-
-            <p>
-              Add a short explanation of what this visualization
-              demonstrates.
-            </p>
-
-          </div>
-
-
-          <div class="visualization-card">
-
-            <div class="visualization-placeholder">
-              <span>GRAPH</span>
+            <div class="visualization-card__body">
+              <h3>Survival by Sex</h3>
+              <p>
+                Female passengers have a much higher survival rate
+                compared to their male counterparts.
+              </p>
             </div>
 
-            <h3>
-              Feature Relationships
-            </h3>
+          </article>
 
-            <p>
-              Add a short explanation of what this visualization
-              demonstrates.
-            </p>
 
-          </div>
+          <article class="visualization-card">
+
+            <div class="visualization-image">
+              <img
+                src="titanic_img/Survivors by Pclass.png"
+                alt="Survival by passenger class"
+              >
+            </div>
+
+            <div class="visualization-card__body">
+              <h3>Survival by Class</h3>
+              <p>
+                Survival by passenger class, with 1 representing
+                upper class, 2 middle class, and 3 lower class.
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="visualization-card">
+
+            <div class="visualization-image">
+              <img
+                src="titanic_img/Age of Survivors and Non-Survivors.png"
+                alt="Age of survivors and non-survivors"
+              >
+            </div>
+
+            <div class="visualization-card__body">
+              <h3>Age of Survivors vs. Non-Survivors</h3>
+              <p>
+                The age distribution of survivors is generally
+                younger than that of non-survivors.
+              </p>
+            </div>
+
+          </article>
 
         </div>
 
       </div>
-
     </section>
 
 
-    <!-- ================================
+    <!-- =================================
          MACHINE LEARNING
-    ================================= -->
+    ================================== -->
 
-    <section class="project-section">
-
+    <section class="project-section project-section--light">
       <div class="container project-grid">
 
         <div>
-
-          <p class="section__label">
-            05 — MACHINE LEARNING
-          </p>
+          <p class="section__label">05 — MACHINE LEARNING</p>
 
           <h2 class="project-section__title">
             Predicting survival
           </h2>
-
         </div>
-
 
         <div class="project-section__content">
 
           <p>
-            After exploring the dataset, I use the passenger
-            characteristics as features for a machine learning
-            model.
+            After exploring the dataset, I use passenger age,
+            class, fare, and other variables as features for
+            machine learning models.
           </p>
 
           <p>
-            The model is trained using the available training data
-            and evaluated based on its ability to predict passenger
-            survival.
+            The models are trained using the available training
+            data and evaluated based on their ability to predict
+            passenger survival.
           </p>
-
 
           <div class="model-info">
 
             <div>
-              <span>Model</span>
-              <strong>Model name</strong>
+              <span>Models</span>
+              <strong>Random Forest + Neural Network</strong>
             </div>
 
             <div>
@@ -444,7 +427,7 @@
 
             <div>
               <span>Evaluation</span>
-              <strong>Accuracy / F1 / etc.</strong>
+              <strong>Accuracy + Kaggle Score</strong>
             </div>
 
           </div>
@@ -452,106 +435,171 @@
         </div>
 
       </div>
-
     </section>
 
 
-    <!-- ================================
+    <!-- =================================
          RESULTS
-    ================================= -->
+    ================================== -->
 
     <section class="project-section project-section--blue">
-
       <div class="container">
 
-        <p class="section__label">
-          06 — RESULTS
-        </p>
+        <p class="section__label">06 — RESULTS</p>
 
         <h2 class="project-section__title">
-          Results & Findings
+          Results &amp; Findings
         </h2>
 
 
-        <div class="results">
+        <!-- MODEL 01 -->
 
-          <div class="result">
+        <article class="model-result">
 
-            <span class="result__number">
-              --
-            </span>
+          <div class="model-result__header">
+            <div>
+              <span>MODEL 01</span>
+              <h3>Random Forest</h3>
+            </div>
+          </div>
 
-            <p>
-              Model accuracy
-            </p>
+          <div class="model-result__grid">
+
+            <div class="result">
+              <span class="result__number">75.68%</span>
+              <p>Model Accuracy</p>
+            </div>
+
+            <div class="result">
+              <span class="result__number">0.77511</span>
+              <p>Kaggle Score</p>
+            </div>
+
+            <div class="result result--feature">
+              <div class="feature-image">
+                <img
+                  src="titanic_img/Important_Features.png"
+                  alt="Random Forest important features"
+                >
+              </div>
+              <p>Important Features</p>
+            </div>
 
           </div>
 
+        </article>
 
-          <div class="result">
 
-            <span class="result__number">
-              --
-            </span>
+        <!-- MODEL 02 -->
 
-            <p>
-              Kaggle score
-            </p>
+        <article class="model-result">
+
+          <div class="model-result__header">
+            <div>
+              <span>MODEL 02</span>
+              <h3>Neural Network</h3>
+            </div>
+          </div>
+
+          <div class="model-result__grid">
+
+            <div class="result">
+              <span class="result__number">65.78%</span>
+              <p>Model Accuracy</p>
+            </div>
+
+            <div class="result">
+              <span class="result__number">0.77511</span>
+              <p>Kaggle Score</p>
+            </div>
+
+            <div class="result result--feature">
+              <div class="feature-image">
+                <img src = "titanic_img/TrainingvsValidation_Accuracy.png">
+              </div>
+              <p>Feature analysis</p>
+            </div>
 
           </div>
 
+        </article>
 
-          <div class="result">
 
-            <span class="result__number">
-              --
-            </span>
+        <!-- MODEL COMPARISON -->
 
-            <p>
-              Important features
-            </p>
+        <div class="model-comparison">
+
+          <div class="model-comparison__label">
+            MODEL COMPARISON
+          </div>
+
+          <h3>Comparing the two models</h3>
+
+          <div class="comparison-grid">
+
+            <div class="comparison-item">
+              <span>Random Forest</span>
+              <strong>75.68%</strong>
+              <small>Accuracy</small>
+            </div>
+
+            <div class="comparison-divider">VS</div>
+
+            <div class="comparison-item">
+              <span>Neural Network</span>
+              <strong>65.78%</strong>
+              <small>Accuracy</small>
+            </div>
 
           </div>
+
+          <p>
+            In this analysis, the Random Forest model achieved
+            a higher accuracy than the Neural Network model.
+          </p>
 
         </div>
 
 
+        <!-- FINDINGS -->
+
         <div class="results__text">
 
+          <h3>Key Findings</h3>
+
           <p>
-            Add your main findings here after completing the analysis.
-            This section should explain what you learned from the
-            dataset and how the results relate to your original
-            question.
+            The analysis suggests that passenger characteristics
+            such as sex, passenger class, age, and fare are important
+            variables for understanding survival patterns in the
+            Titanic dataset.
+          </p>
+
+          <p>
+            The machine learning results provide a quantitative way
+            to compare how different models perform when predicting
+            passenger survival.
           </p>
 
         </div>
 
       </div>
-
     </section>
 
 
-    <!-- ================================
-         WHAT I LEARNED
-    ================================= -->
+    <!-- =================================
+         REFLECTION
+    ================================== -->
 
     <section class="project-section">
-
       <div class="container project-grid">
 
         <div>
-
-          <p class="section__label">
-            07 — REFLECTION
-          </p>
+          <p class="section__label">07 — REFLECTION</p>
 
           <h2 class="project-section__title">
             What I learned
           </h2>
-
         </div>
-
 
         <div class="project-section__content">
 
@@ -576,16 +624,14 @@
         </div>
 
       </div>
-
     </section>
 
 
-    <!-- ================================
-         LINKS
-    ================================= -->
+    <!-- =================================
+         PROJECT LINKS
+    ================================== -->
 
     <section class="project-links">
-
       <div class="container">
 
         <p class="section__label">
@@ -595,16 +641,16 @@
         <div class="project-links__buttons">
 
           <a
-            href="#"
+            href="https://colab.research.google.com/notebook#fileId=https%3A//storage.googleapis.com/kaggle-colab-exported-notebooks/quocdunghuynh/titanic-notebook-in-python.407fa68b-3d22-47be-9b1c-5e88d0ea7938.ipynb%3FX-Goog-Algorithm%3DGOOG4-RSA-SHA256%26X-Goog-Credential%3Dgcp-kaggle-com%2540kaggle-161607.iam.gserviceaccount.com/20260918/auto/storage/goog4_request%26X-Goog-Date%3D20260918T122840Z%26X-Goog-Expires%3D259200%26X-Goog-SignedHeaders%3Dhost%26X-Goog-Signature%3D267f597a39b7cace053ba1146b15ac0ae517b368680252d1775ff9240022fe5a3ed09a8598ce632c1b7eabbac23069b0ef44af6f83e36fa644760ab2b56a9d73353f69580eceb02b09bbd7f15c73c929bdba398a49fafb69b61d6ae06cb48aa63e003d940a27bafd48b9c1ba837200eef842063a232cca42852cb7e3a73e92e6e46188258cf438b5cd81a46be860c18cb953fa989c12ef4c4a41a04dba992c55bdb49084c98be2236b09afb26a966f48dd0e92f9a430ed44ada8a6bbce7562818b83940513ba2f77986ec20c7f04681f363d60fabccc363038a2df59f38ec93db3f2a7f9e99eeb6cf39ece0ff0a484c6c562c43e6c6ccf39c23b0885aa20c196"
             class="button"
             target="_blank"
             rel="noopener noreferrer"
           >
-            View on GitHub →
+            View on Google Colab →
           </a>
 
           <a
-            href="#"
+            href="https://www.kaggle.com/code/quocdunghuynh/titanic-notebook-in-python"
             class="text-link"
             target="_blank"
             rel="noopener noreferrer"
@@ -615,19 +661,16 @@
         </div>
 
       </div>
-
     </section>
-
 
   </main>
 
 
-  <!-- ================================
+  <!-- =================================
        FOOTER
-  ================================= -->
+  ================================== -->
 
   <footer class="footer">
-
     <div class="container">
 
       <p>
@@ -639,10 +682,7 @@
       </a>
 
     </div>
-
   </footer>
 
-
 </body>
-
 </html>

@@ -1,0 +1,948 @@
+/* =================================
+   TITANIC PROJECT PAGE
+   Jerry Huynh
+================================= */
+
+
+/* =================================
+   GLOBAL PROJECT VARIABLES
+================================= */
+
+:root {
+  --blue: #003f7d;
+  --maize: #ffcc33;
+  --maize-light: #fff8d8;
+  --text: #17202a;
+  --muted: #66717c;
+  --background: #f7f8f9;
+  --border: #dce1e5;
+  --white: #ffffff;
+}
+
+
+/* =================================
+   BASE
+================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+
+/* =================================
+   HEADER / NAVIGATION
+================================= */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  background: rgba(247, 248, 249, 0.94);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+}
+
+.nav {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  color: var(--text);
+  font-size: 1.35rem;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+}
+
+.nav__logo span {
+  color: var(--blue);
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav__link {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  transition: color 0.2s ease;
+}
+
+.nav__link:hover,
+.nav__link.active {
+  color: var(--blue);
+}
+
+
+/* =================================
+   SHARED TYPOGRAPHY
+================================= */
+
+.section__label {
+  margin: 0 0 18px;
+  color: var(--blue);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.project-section__title {
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.05em;
+}
+
+
+/* =================================
+   PROJECT HERO
+================================= */
+
+.project-page {
+  padding-top: 155px;
+  padding-bottom: 105px;
+  border-bottom: 1px solid var(--border);
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 70px;
+  color: var(--blue);
+  font-size: 0.85rem;
+  font-weight: 700;
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.back-link:hover {
+  color: #002c58;
+  transform: translateX(-5px);
+}
+
+.project-page__header {
+  width: 100%;
+}
+
+.project-page__title-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 330px;
+  align-items: center;
+  gap: 70px;
+  margin-top: 24px;
+}
+
+.project-page__title-wrap {
+  min-width: 0;
+}
+
+.project-page__title {
+  margin: 0 0 35px;
+  color: var(--text);
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  line-height: 0.94;
+  letter-spacing: -0.07em;
+}
+
+.project-page__title span {
+  display: block;
+  color: var(--blue);
+}
+
+.project-page__image-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Titanic_Sinking_Image {
+  display: block;
+  width: 100%;
+  max-width: 330px;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.project-page__intro {
+  max-width: 720px;
+  margin: 5px 0 30px;
+  color: var(--muted);
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+.project-page__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.project-page__tags span {
+  padding: 7px 12px;
+  border: 1px solid #d8dde1;
+  border-radius: 3px;
+  color: var(--blue);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+
+/* =================================
+   PROJECT SECTIONS
+================================= */
+
+.project-section {
+  padding: 110px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.project-section--light {
+  background: var(--white);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.75fr) minmax(0, 1.25fr);
+  gap: 100px;
+  align-items: start;
+}
+
+.project-section__content {
+  max-width: 700px;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.85;
+}
+
+.project-section__content p {
+  margin: 0 0 22px;
+}
+
+.project-section__content p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =================================
+   QUOTE / RESEARCH QUESTION
+================================= */
+
+blockquote {
+  margin: 30px 0;
+  padding: 25px 30px;
+  border-left: 4px solid var(--maize);
+  background: var(--maize-light);
+  color: var(--text);
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+
+/* =================================
+   ANALYSIS CARDS
+================================= */
+
+.analysis-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 55px;
+}
+
+.analysis-card {
+  min-height: 220px;
+  padding: 35px;
+  border: 1px solid var(--border);
+  background: var(--white);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.analysis-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
+}
+
+.analysis-card__number {
+  color: var(--blue);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.analysis-card h3 {
+  margin: 20px 0 12px;
+  font-size: 1.3rem;
+}
+
+.analysis-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+
+/* =================================
+   DATA OVERVIEW
+================================= */
+
+.data-overview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+  margin-top: 55px;
+}
+
+.data-overview-card {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--background);
+}
+
+.data-image {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #eef1f3;
+}
+
+.data-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.data-overview-card__body {
+  padding: 0 25px 25px;
+}
+
+.data-overview-card h3 {
+  margin: 20px 0 8px;
+  font-size: 1.2rem;
+}
+
+.data-overview-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+
+/* =================================
+   VISUALIZATIONS
+================================= */
+
+.visualization-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+  margin-top: 55px;
+}
+
+.visualization-card {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--white);
+}
+
+.visualization-image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: #eef1f3;
+}
+
+.visualization-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.visualization-card__body {
+  padding: 0 25px 25px;
+}
+
+.visualization-card h3 {
+  margin: 20px 0 8px;
+  font-size: 1.2rem;
+}
+
+.visualization-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+
+/* =================================
+   MACHINE LEARNING
+================================= */
+
+.model-info {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 15px;
+  margin-top: 35px;
+}
+
+.model-info div {
+  min-height: 100px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  background: var(--white);
+}
+
+.model-info span {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--muted);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.model-info strong {
+  color: var(--blue);
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+
+/* =================================
+   RESULTS SECTION
+================================= */
+
+.project-section--blue {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.project-section--blue .section__label {
+  color: var(--maize);
+}
+
+.project-section--blue .project-section__title {
+  color: var(--white);
+  margin-bottom: 55px;
+}
+
+
+/* =================================
+   INDIVIDUAL MODEL
+================================= */
+
+.model-result {
+  margin-top: 55px;
+}
+
+.model-result__header {
+  margin-bottom: 20px;
+}
+
+.model-result__header span {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--maize);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.model-result__header h3 {
+  margin: 0;
+  color: var(--white);
+  font-size: 1.8rem;
+  letter-spacing: -0.02em;
+}
+
+.model-result__grid {
+  display: grid;
+  grid-template-columns: 0.8fr 0.8fr 1.4fr;
+  gap: 20px;
+}
+
+.result {
+  min-height: 190px;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.result__number {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--maize);
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.result > p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.9rem;
+}
+
+.result--feature {
+  justify-content: flex-start;
+  min-height: 300px;
+}
+
+.feature-image {
+  width: 100%;
+  height: 240px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.feature-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.feature-placeholder {
+  width: 100%;
+  height: 240px;
+  margin-bottom: 20px;
+  border: 1px dashed rgba(255, 255, 255, 0.25);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.feature-placeholder span {
+  color: var(--maize);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.feature-placeholder small {
+  max-width: 180px;
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+
+/* =================================
+   MODEL COMPARISON
+================================= */
+
+.model-comparison {
+  margin-top: 60px;
+  padding: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.model-comparison__label {
+  margin-bottom: 8px;
+  color: var(--maize);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.model-comparison h3 {
+  margin: 0 0 30px;
+  color: var(--white);
+  font-size: 1.6rem;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 70px 1fr;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.comparison-item {
+  padding: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.comparison-item span {
+  display: block;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.85rem;
+}
+
+.comparison-item strong {
+  display: block;
+  color: var(--maize);
+  font-size: 2rem;
+}
+
+.comparison-item small {
+  display: block;
+  margin-top: 4px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.comparison-divider {
+  color: var(--maize);
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.model-comparison > p {
+  max-width: 700px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.7;
+}
+
+
+/* =================================
+   KEY FINDINGS
+================================= */
+
+.results__text {
+  max-width: 760px;
+  margin-top: 60px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.results__text h3 {
+  margin: 0 0 20px;
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+.results__text p {
+  margin: 0 0 20px;
+}
+
+.results__text p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =================================
+   PROJECT LINKS
+================================= */
+
+.project-links {
+  padding: 80px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.project-links__buttons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 25px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0 22px;
+  background: var(--blue);
+  color: var(--white);
+  font-size: 0.82rem;
+  font-weight: 700;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.button:hover {
+  background: #002c58;
+  transform: translateY(-2px);
+}
+
+.text-link {
+  color: var(--blue);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+
+/* =================================
+   FOOTER
+================================= */
+
+.footer {
+  padding: 30px 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer a {
+  color: var(--blue);
+  font-weight: 700;
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 900px) {
+
+  .container {
+    width: min(100% - 40px, 720px);
+  }
+
+  .project-page__title-row {
+    grid-template-columns: minmax(0, 1fr) 250px;
+    gap: 35px;
+  }
+
+  .Titanic_Sinking_Image {
+    height: 240px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .model-result__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .result--feature {
+    grid-column: 1 / -1;
+  }
+
+  .model-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 650px) {
+
+  .container {
+    width: min(100% - 32px, 560px);
+  }
+
+  .nav {
+    min-height: 68px;
+  }
+
+  .nav__links {
+    gap: 16px;
+  }
+
+  .nav__link {
+    font-size: 0.7rem;
+  }
+
+  .project-page {
+    padding-top: 115px;
+    padding-bottom: 80px;
+  }
+
+  .back-link {
+    margin-bottom: 50px;
+  }
+
+  .project-page__title-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .project-page__title {
+    margin-bottom: 10px;
+    font-size: clamp(3.2rem, 15vw, 5rem);
+  }
+
+  .project-page__image-wrap {
+    justify-content: flex-start;
+  }
+
+  .Titanic_Sinking_Image {
+    width: 100%;
+    max-width: 380px;
+    height: 230px;
+    object-position: left center;
+  }
+
+  .project-page__intro {
+    font-size: 1rem;
+  }
+
+  .project-section {
+    padding: 80px 0;
+  }
+
+  .analysis-grid,
+  .data-overview-grid,
+  .visualization-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .analysis-card {
+    min-height: auto;
+  }
+
+  .data-image {
+    height: 280px;
+  }
+
+  .model-result__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .result--feature {
+    grid-column: auto;
+  }
+
+  .result {
+    min-height: 160px;
+  }
+
+  .model-comparison {
+    padding: 25px;
+  }
+
+  .comparison-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .comparison-divider {
+    padding: 5px 0;
+  }
+
+  .project-links__buttons {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .footer .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+
+/* =================================
+   SMALL MOBILE
+================================= */
+
+@media (max-width: 420px) {
+
+  .nav__links {
+    gap: 10px;
+  }
+
+  .nav__link {
+    font-size: 0.64rem;
+  }
+
+  .project-page__title {
+    font-size: 3rem;
+  }
+
+  .project-section__title {
+    font-size: 2.2rem;
+  }
+
+  .analysis-card,
+  .result {
+    padding: 25px;
+  }
+
+  .result__number {
+    font-size: 2.2rem;
+  }
+}
